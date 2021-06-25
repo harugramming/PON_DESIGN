@@ -1,0 +1,116 @@
+body{
+  background-color: aqua;
+}
+
+/* header　start */
+header{
+  background-color: #21054d;
+  background-image: url("../img/hero.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  color: #fff;
+  
+}
+header #header_wrap{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+header #header_wrap img{
+  padding: 26px;
+}
+header nav{
+  display: flex;
+  align-items: center;
+}
+header nav ul{
+  display: flex;
+  color: #fff;
+  list-style: none;
+  font-family: Montserrat, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+header nav ul a li{
+  margin: 0 18px;
+}
+
+    /* 下線アニメーション */
+    .Item{
+      text-decoration: none;
+    }
+    .Item-Text{
+      position: relative;
+      z-index: 1;
+    }
+    .Item-Text:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;/*テキストからの距離*/
+      width: 0%;/*初期状態では下線非表示*/
+      height: 2px;/*下線の高さ*/
+      background: #fff;/*下線の色*/
+      z-index: -1;
+      transition: all 0.4s;/*アニメーション速度*/
+    }
+    .Item:hover .Item-Text:after{
+      width: 100%;/*hover時に表示*/
+    }
+
+header{
+  position: relative;
+}
+#header_main {
+  font-family: Montserrat, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-style: normal;
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#header_main h1{
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: 16px;
+}
+#header_main h2{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-bottom: 64px;
+}
+#header_main .btn{
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  background-color: none;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 20px 60px;
+}
+#header_main .btn::after{
+  content: "▶︎";
+  font-size: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+}
+#header_main .btn:hover:after{
+  right: 17px;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+}
+/* header end */
