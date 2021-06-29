@@ -5,3 +5,24 @@ google font を初めて使った。
 https://yuyauver98.me/hover-underline-animation-left-to-right/
 スクロールのアニメーションがむずかしい
 https://www.nxworld.net/css-scroll-down-line.html
+
+
+2021/6/26
+font-weightが効かない。
+↪︎ googlefonts でfont-weightが700のものだけをひっぱってきてたからだった
+
+2021/6/27
+グラデーションをトランジションで変化させる方法が工夫が必要でむずかしかった
+https://fujikoblog0309.com/css-background-transition
+
+背景色を二色にする方法
+https://www.yoheim.net/blog.php?q=20181102
+
+2021/6/28
+javascriptによるクラスの追加、削除によって画像の切り替えを実装した。
+
+2021/6/29
+titleクラス使ったから実装超らくちんたのしい。
+headerをスクロール時に表示、javascriptで簡単easy
+謎の横スクロールが出てしまう問題に苦しんだ。
+結局、h1タグやimgで横幅指定をしてしまっている奴が原因だった。
