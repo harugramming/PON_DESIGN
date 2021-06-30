@@ -40,16 +40,11 @@ document.getElementById("works_img_after").onclick = function() {
     document.getElementById("circle" + count).classList.add("circle_checked");
 };
 
-//header をスクロール時に固定表示
+
 
 
 window.onscroll = function() {
-  var posY = window.scrollY;
-  if(posY > 1){
-    document.getElementById("header_wrap").classList.add("header_scroll");
-  }else if(posY == 0){
-    document.getElementById("header_wrap").classList.remove("header_scroll");
-  }
+
   
 };
 
@@ -57,13 +52,20 @@ window.onscroll = function() {
 
 window.onscroll = function() {
   var posY = window.scrollY;
-  if(posY > 150){
-    document.getElementById("arrow").classList.remove("display_none");
-    document.getElementById("arrow").classList.add("display_block");
-  }else if(posY < 150){
+  //header をスクロール時に固定表示
+  if(posY == 0){
+    document.getElementById("header_wrap").classList.remove("header_scroll");
+
+  }else if(posY > 1){
+    document.getElementById("header_wrap").classList.add("header_scroll");
+  }
+  if(posY < 150){
     document.getElementById("arrow").classList.remove("display_block");
     document.getElementById("arrow").classList.add("display_none");
-    
+  }
+  else if(posY > 150){
+    document.getElementById("arrow").classList.remove("display_none");
+    document.getElementById("arrow").classList.add("display_block");
   }
 }
 
