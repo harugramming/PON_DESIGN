@@ -571,8 +571,7 @@ footer p{
 
     /* ハンバーガーメニュー */
     .menu-content {
-      width: 100%;
-      height: 100%;
+
       position: fixed;
       top: 0;
       left: 0;
@@ -583,7 +582,11 @@ footer p{
       display: flex;
       justify-content: center;
       align-items: center;
-
+      }
+      #menu-btn-check:checked ~ .menu-content{
+        display: flex;
+        width: 100%;
+        height: 100%;
       }
       .menu-content ul {
           padding: 10px 0;
@@ -616,13 +619,11 @@ footer p{
           top: 16px;
       }
       .menu-content {
-        width: 100%;
-        height: 100%;
         position: fixed;
         top: 0;
         opacity: 0;
         z-index: 80;
-        transition: all 0.5s;/*アニメーション設定*/
+        transition: all 1s;/*アニメーション設定*/
     }
     #menu-btn-check:checked ~ .menu-content {
       opacity: 1;
